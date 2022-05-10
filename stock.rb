@@ -17,7 +17,7 @@ def fetch(code, name = nil)
   data = doc.text.encode("UTF-8").split(";\n").last.split('=').last.gsub('"','').split('~')
   name ||= data[1]
   zs, kp, current, incr = data[4], data[5], data[3], data[32]
-  puts "[#{name}] 昨收: #{zs.ljust(7)}, 当前: #{current.ljust(7)}, 涨幅: #{incr}%"
+  puts "[#{name}(#{code})] 昨收: #{zs.ljust(7)}, 当前: #{current.ljust(7)}, 涨幅: #{incr}%"
 end
 
 while true do
