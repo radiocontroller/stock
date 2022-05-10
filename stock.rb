@@ -2,8 +2,6 @@
 require 'nokogiri'
 require 'open-uri'
 
-BYTES_SIZE = 12
-
 # code: 股票代码，要以sz或者sh开头
 # name: 自定义名称，如果不传取实际名称(可用于对齐)
 def fetch(code, name = nil)
