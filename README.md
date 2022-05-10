@@ -1,5 +1,7 @@
 # 实时刷新股价信息脚本，可在终端执行
 
+![stock.png](https://raw.githubusercontent.com/radiocontroller/stock/main/stock.png)
+
 ## 1. 使用前需要安装ruby环境:
 
 #### apt (Debian or Ubuntu)
