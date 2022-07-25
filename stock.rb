@@ -6,7 +6,7 @@ require 'open-uri'
 # name: 自定义名称，如果不传取实际名称(可用于对齐)
 def fetch(code, name = nil)
   unless code.start_with?('sz') || code.start_with?('sh')
-    puts "code要以sh或者sh开头: #{code}"
+    puts "code要以sz或者sh开头: #{code}"
     return
   end
   # 接口地址：https://qt.gtimg.cn/q=sz000683
