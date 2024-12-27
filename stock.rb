@@ -11,7 +11,7 @@ def fetch(code, name = nil)
   end
   # 接口地址：https://qt.gtimg.cn/q=sz000683
   url = "https://qt.gtimg.cn/q=#{code}"
-  doc = Nokogiri::HTML(open(url).read)
+  doc = Nokogiri::HTML(URI.open(url).read)
   data = doc.text.encode("UTF-8").split(";\n").last.split('=').last.gsub('"','').split('~')
   name ||= data[1]
   zs, kp, current, incr = data[4], data[5], data[3], data[32]
