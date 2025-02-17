@@ -36,4 +36,4 @@ ruby stock.rb
 
 ## 3. 在源码stock.rb中添加fetch行，可对多个股价进行关注
 
-## 4. 接口返回的各字段含义可参考: [https://www.programminghunter.com/article/1952756816/](https://www.programminghunter.com/article/1952756816/)
+## 4. 接口返回的各字段含义参考: [参考接口](http://www.joeychou.me/blog/35.html)
